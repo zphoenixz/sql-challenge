@@ -28,14 +28,14 @@ hire_date DATE
 
 salaries
 --------
-emp_no INTEGER FK - employees.emp_no
+emp_no INTEGER FK >-< employees.emp_no
 salary INTEGER
 from_date DATE
 to_date DATE
 
 titles
 ------
-emp_no INTEGER FK - employees.emp_no
+emp_no INTEGER FK >-< employees.emp_no
 title VARCHAR(100)
 from_date DATE
 to_date DATE
