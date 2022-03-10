@@ -21,6 +21,14 @@ select e.emp_no, e.first_name, e.last_name, d.dept_name
         where e.emp_no=d_e.emp_no
             and d_e.dept_no=d.dept_no;
 
+select e.emp_no, e.first_name, e.last_name, d.dept_name
+    from employees e
+        inner join dept_emp d_e 
+            on e.emp_no=d_e.emp_no
+        inner join departments d
+            on d_e.dept_no=d.dept_no;
+
+
 /*List all employees whose first name is "Hercules" and last names begin with "B."*/
 select e.emp_no, e.first_name, e.last_name
     from employees e
