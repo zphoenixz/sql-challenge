@@ -51,7 +51,7 @@ select e.emp_no, e.last_name, e.first_name, d.dept_name
             and (
                     d.dept_name='Sales'
                     or
-                    d.dept_name='Develpment'
+                    d.dept_name='Development'
             );
 
 /*In descending order, list the frequency count of employee last names, i.e., how many employees share each last name.*/
